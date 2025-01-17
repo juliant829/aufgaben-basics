@@ -2,7 +2,7 @@ package forms
 
 import "fmt"
 
-func ExamplePerimeterSquare() {
+func ExamplePerimeterSquare(a float64) + (a float64) {
 	fmt.Println(PerimeterSquare(0))
 	fmt.Println(PerimeterSquare(1))
 	fmt.Println(PerimeterSquare(2))
