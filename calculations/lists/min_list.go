@@ -4,5 +4,17 @@ package lists
 // Wenn die Liste leer ist, wird 0 zurückgegeben.
 func MinList(nums []int) int {
 	// TODO
-	return 0
+	if len(nums) == 0 {
+		return 0
+	}
+	if len(nums) == 1 {
+		return 1
+	}
+	min := nums[0]
+	for _, num := range nums[1:] {
+		if num < min {
+			min = num
+		}
+	}
+	return min
 }

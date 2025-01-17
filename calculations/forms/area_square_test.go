@@ -2,7 +2,9 @@ package forms
 
 import "fmt"
 
-func ExampleAreaSquare() {
+// ExampleAreaSquare demonstrates how to calculate the area of a square
+// given the length of its side 'a'. The formula used is a^2.
+func ExampleAreaSquare(a float64) {
 	fmt.Println(AreaSquare(0))
 	fmt.Println(AreaSquare(1))
 	fmt.Println(AreaSquare(2))
