@@ -1,9 +1,18 @@
 package make_unique
 
+import "fmt"
+
 // Erwartet eine Liste von Strings.
 // Hängt Zahlen an alle mehrfach vorkommenden Strings an, um sie eindeutig zu machen.
 func MakeUnique(strings []string) {
-	// TODO
+	counts := make(map[string]int)
+
+	for i := range strings {
+		counts[strings[i]]++
+		if counts[strings[i]] > 1 {
+			strings[i] = fmt.Sprintf("%s_%d", strings[i], counts[strings[i]]+0)
+		}
+	}
 }
 
 // REMARKS
