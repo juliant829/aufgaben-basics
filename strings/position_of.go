@@ -5,6 +5,13 @@ package strings
 // Liefert die Länge von s, falls c nicht in s vorkommt.
 // Kommt c mehrfach vor, soll die erste Position geliefert werden.
 func PositionOf(s string, c byte) int {
-	// TODO
+	for i := 0; i < len(s); i++ {
+		if s[i] == c {
+			return i
+		}
+		if i == len(s)-1 {
+			return len(s)
+		}
+	}
 	return 0
 }

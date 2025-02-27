@@ -1,7 +1,5 @@
 package strings
 
-import "fmt"
-
 // Erwartet einen String und prüft, ob er korrekte Klammerpaare enthält.
 // D.h. der Eingabestring enthält Klammern '(' und ')'.
 // Die Funktion soll nun prüfen, ob der String für jede öffnende Klammer auch eine
@@ -10,9 +8,6 @@ import "fmt"
 // passende öffnende Klammer gegeben hat.
 // Die Funktion soll true liefern, falls der String korrekt geklammert ist.
 func CheckParentheses(s string) bool {
-	fmt.Println(true)
-	return true
-
-	fmt.Println(false)
+	// Implementiere die Funktion hier.
 	return false
 }
